@@ -1,0 +1,30 @@
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @list.Title %>
+     <%= @list.Name %> 
+
+    </h1>
+  <p class="lead">
+     <hr class="my-4">
+   <%= @list.email %>   |
+   <%= @list.contact %> |
+   <%= @list.git_repo %>
+  </p>
+  <br/><br/>
+  
+  <p class="lead">
+
+    <%= link_to 'Edit', edit_list_path(@list), class:"btn btn-success" %> 
+<%= link_to 'Back', lists_path, class:"btn btn-success" %>
+
+  </p>
+</div>
+
+
+
+
+
+
